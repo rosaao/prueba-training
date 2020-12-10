@@ -9,6 +9,9 @@
     'depends' : ['base'],
     'data' : [
         'security/academy_security.xml',
+        'security/spaceship_security.xml',
+        'security/library_security.xml',
+        'security/cooperative_volunteers_security.xml',
         'security/ir.model.access.csv',
         'views/course_views.xml'
     ],
