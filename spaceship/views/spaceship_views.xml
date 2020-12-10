@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="spaceship_view_form">
+            <field name="name">spaceship.form</field>
+            <field name="model">spaceship</field>
+            <field name="arch" type="xml">
+                <form string="Spaceship Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group string="Dimensions">
+                                <field name="width"/>
+                                <field name="height"/>
+                                <field name="depth"/>
+                            </group>
+                            <group>
+                                <field name="fuel_type"/>
+                                <field name="ship_type"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Additonal Info">
+                                <field name="number_of_passengers"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="spaceship_view_list">
+            <field name="name">spaceship.list</field>
+            <field name="model">spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship list">
+                    <field name="name"/>
+                    <field name="ship_type"/>
+                    <field name="number_of_passengers"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="spaceship_view_search">
+            <field name="name">spaceship.search</field>
+            <field name="model">spaceship</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="number_of_passengers"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
