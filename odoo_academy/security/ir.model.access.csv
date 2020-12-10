@@ -1,1 +1,8 @@
-access_course,access_course,model_course,base.group_user,1,1,1,0
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_course_admin,Admin course,model_course,group_academy_admin,1,1,1,1
+access_course_read,Read All Course,model_course,,1,0,0,0
+access_spaceship_read,Read All spaceship,model_spaceship,,1,0,0,0
+access_library_read,Read All library,model_library,,1,0,0,0
+access_book_read,Read All book,model_library_books,,1,0,0,0
+access_cooperative_volunteers_read,Read All cooperative volunteers,model_cooperative_volunteers,,1,0,0,0
+access_cooperative_volunteers_task_read,Read All cooperative volunteers Task,model_cooperative_volunteers_task,,1,0,0,0
