@@ -9,11 +9,13 @@
     'depends' : ['base'],
     'data' : [
         'security/academy_security.xml',
-        'security/spaceship_security.xml',
         'security/library_security.xml',
         'security/cooperative_volunteers_security.xml',
         'security/ir.model.access.csv',
-        'views/course_views.xml'
+        'views/academy_menuitems.xml',
+        'views/course_views.xml',
     ],
-    'demo' : ['demo/academy_demo.xml'],
+    'demo' : [
+        'demo/academy_demo.xml'
+    ],
 }
