@@ -1,6 +1,3 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_course_admin,Admin course,model_course,group_academy_admin,1,1,1,1
 access_course_read,Read All Course,model_course,,1,0,0,0
-access_head_cooperative_volunteers_read,Head cooperative volunteers,model_cooperative_volunteers,group_head_cooperative_volunteers,1,1,1,1
-access_head_cooperative_volunteers_task_read,Head cooperative volunteers Task,model_cooperative_volunteers_task,group_head_cooperative_volunteers,1,1,1,1
-access_cooperative_volunteers_task_read,Read All cooperative volunteers Task,model_cooperative_volunteers_task,group_cooperative_volunteer,1,1,1,0
