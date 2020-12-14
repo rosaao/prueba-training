@@ -8,8 +8,8 @@
     'version' : '0.1',
     'depends' : ['base'],
     'data' : [
-        #'security/cooperative_volunteers_security.xml',
-        #'security/ir.model.access.csv',
+        'security/cooperative_volunteers_security.xml',
+        'security/ir.model.access.csv',
         #'views/cv_menuitems.xml',
         #'views/cv_views.xml',
     ],
