@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="library.book" id="the_notebook">
+            <field name="name">The Notebook</field>
+            <field name="authors">Nicholas Sparks</field>
+            <field name="year_of_edition">1996</field>
+            <field name="genre">novel</field>
+        </record>
+        
+        <record model="library.book" id="frankenstein">
+            <field name="name">Frankenstein</field>
+            <field name="authors">Mary Shelley</field>
+            <field name="year_of_edition">1823</field>
+            <field name="genre">fiction</field>
+        </record>
+        
+        <record model="library.book" id="principito">
+            <field name="name">El principito</field>
+            <field name="authors">Antoine de Saint-Exupéry</field>
+            <field name="genre">kids</field>
+        </record>
+        
+        <record model="library.book" id="dear_john">
+            <field name="name">Dear John</field>
+            <field name="authors">Nicholas Sparks</field>
+            <field name="year_of_edition">2006</field>
+            <field name="genre">novel</field>
+        </record>
+        
+        <record model="library.book" id="gen_egoista">
+            <field name="name">El gen egoísta</field>
+            <field name="authors">Richard Dawkins</field>
+            <field name="year_of_edition">1976</field>
+            <field name="genre">science</field>
+        </record>
+    </data>
+</odoo>
