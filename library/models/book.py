@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-
+from odoo.exceptions import UserError, ValidationError
     
 class Book(models.Model):
     _name = 'library.book'
     _description = 'books of the library'
     
     name = fields.Char(string='Book',required=True)
+    note = fields.Text(string='Note')
     
     authors = fields.Char(string='Authors')
     
@@ -24,3 +25,9 @@ class Book(models.Model):
                                      ('science','Science'),
                                      ('fiction','Fiction'),
                                      ('kids','Kids')])
+    
+    
+    @api.onchange('ISBN')
+    def _onchange_ISBN(self):
+        if len(self.ISBN) != 13:
+            raise ValidationError('ISBN must be 13 characters long.')

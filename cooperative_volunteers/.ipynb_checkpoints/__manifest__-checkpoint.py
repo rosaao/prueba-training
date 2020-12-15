@@ -10,10 +10,10 @@
     'data' : [
         'security/cooperative_volunteers_security.xml',
         'security/ir.model.access.csv',
-        #'views/cv_menuitems.xml',
-        #'views/cv_views.xml',
+        'views/cv_menuitems.xml',
+        'views/cv_views.xml',
     ],
     'demo' : [
-        #'demo/cv_demo.xml'
+        'demo/cv_demo.xml'
     ],
 }

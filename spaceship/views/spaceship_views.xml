@@ -11,8 +11,8 @@
                         <group>
                             <group string="Dimensions">
                                 <field name="width"/>
+                                <field name="length"/>
                                 <field name="height"/>
-                                <field name="depth"/>
                             </group>
                             <group>
                                 <field name="fuel_type"/>

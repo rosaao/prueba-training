@@ -20,6 +20,11 @@
                                 <field name="genre"/>
                             </group>
                         </group>
+                        <notebook>
+                            <page string="Note">
+                                <field name="note"/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -42,8 +47,9 @@
             <field name="model">library.book</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name"/>
+                    <field name="ISBN"/>
                     <field name="authors"/>
+                    <field name="name"/>
                 </search>
             </field>
         </record>

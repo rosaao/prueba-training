@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_course_admin,Admin course,model_course,group_academy_admin,1,1,1,1
 access_course_read,Read All Course,model_course,,1,0,0,0
+access_session_admin,Admin session,model_session,group_academy_admin,1,1,1,1
+access_session_read,Read All session,model_session,,1,0,0,0

@@ -12,7 +12,7 @@
             </field>
         </record>
         
-        <menuitem name="Libraru"
+        <menuitem name="Library"
                   id="menu_library"
                   sequence="1"/>
         

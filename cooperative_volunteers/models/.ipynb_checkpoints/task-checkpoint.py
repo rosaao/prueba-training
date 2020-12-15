@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-
+from odoo.exceptions import UserError, ValidationError
     
 class Task(models.Model):
     _name = 'cooperative.volunteers.task'
@@ -24,3 +24,18 @@ class Task(models.Model):
                                           ('monthly','Monthly'),
                                           ('yearly','Yearly')])
     
+    state = fields.Selection(string='State',
+                                selection=[('draft','Draft'),
+                                          ('ready','Ready'),
+                                          ('in-progress','In-Progress'),
+                                          ('done','Done'),
+                                          ('cancel','Cancel')],
+                            default='draft')
+    leader = fields.Char(string='Leader')
+    
+    @api.onchange('leader')
+    def _onchange_leader(self):
+        if self.leader and self.state == 'draft':
+            self.state = 'ready'
+        if not(self.leader):
+            self.state = 'draft'

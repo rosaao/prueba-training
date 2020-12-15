@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
 
 class Spaceship(models.Model):
     _name = 'spaceship'
@@ -9,8 +10,8 @@ class Spaceship(models.Model):
     name = fields.Char(string='Spaceship', required=True)
     
     width = fields.Float(string='Width')
+    length = fields.Float(string='Length')
     height = fields.Float(string='Height')
-    depth = fields.Float(string='Depth')
     
     fuel_type = fields.Selection(string='Fuel type',
                                 selection=[('solid','Solid'),
@@ -22,3 +23,8 @@ class Spaceship(models.Model):
     
     active = fields.Boolean(string='Active', default=True)
     
+    @api.constrains('width','length')
+    def _check_practical_design(self):
+        for record in self:
+            if record.width > record.length:
+                raise UserError('This is not a practical design, make sure length is bigger than width.')
