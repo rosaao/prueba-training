@@ -33,6 +33,8 @@ class Task(models.Model):
                             default='draft')
     leader = fields.Char(string='Leader')
     
+    volunteer_ids = fields.Many2many(comodel_name='res.partner',string='Volunteers')
+    
     @api.onchange('leader')
     def _onchange_leader(self):
         if self.leader and self.state == 'draft':

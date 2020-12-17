@@ -22,6 +22,11 @@
                                 <field name="frequency"/>
                             </group>
                         </group>
+                        <notebook>
+                            <page string="Volunteers">
+                                <field name="volunteer_ids"/>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

@@ -4,22 +4,22 @@
         <record model="cooperative.volunteers.task" id="tsk001">
             <field name="name">Task 001</field>
             <field name="description">Cleaning field</field>
-            <field name="start">2020-12-14 09:00:00</field>
-            <field name="stop">2020-12-14 11:30:00</field>
+            <field name="start">2020-12-14 16:00:00</field>
+            <field name="stop">2020-12-14 18:30:00</field>
         </record>
         
         <record model="cooperative.volunteers.task" id="tsk_002">
             <field name="name">Task 002</field>
             <field name="description">Feeding module</field>
-            <field name="start">2020-12-14 11:30:00</field>
-            <field name="stop">2020-12-14 14:00:00</field>
+            <field name="start">2020-12-14 18:30:00</field>
+            <field name="stop">2020-12-14 21:00:00</field>
         </record>
         
         <record model="cooperative.volunteers.task" id="tsk003">
             <field name="name">Task 003</field>
             <field name="description">Recolection of clothes</field>
-            <field name="start">2020-12-14 14:00:00</field>
-            <field name="stop">2020-12-14 17:00:00</field>
+            <field name="start">2020-12-14 21:00:00</field>
+            <field name="stop">2020-12-15 00:00:00</field>
         </record>
     </data>
 </odoo>

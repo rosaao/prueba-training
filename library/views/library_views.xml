@@ -53,5 +53,40 @@
                 </search>
             </field>
         </record>
+        
+        <record model="ir.ui.view" id="rental_view_form">
+            <field name="name">library.rental.form</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <form string="Rental Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="customer_id"/>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Rented Books">
+                                <field name="book_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="rental_view_list">
+            <field name="name">library.rental.list</field>
+            <field name="model">library.rental</field>
+            <field name="arch" type="xml">
+                <tree string="Rental list">
+                    <field name="customer_id"/>
+                    <field name="book_ids" widget="many2many_tags"/>
+                </tree>
+            </field>
+        </record>
     </data>
 </odoo>
