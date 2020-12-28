@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_book_librarian,Librarian,model_library_book,group_library_librarian,1,1,1,1
+access_book_customer,Customer,model_library_book,group_library_customer,1,0,0,0
+access_rental_librarian,Librarian rental,model_library_rental,group_library_librarian,1,1,1,1
+access_rental_customer,Customer rental,model_library_rental,group_library_customer,1,0,0,0
