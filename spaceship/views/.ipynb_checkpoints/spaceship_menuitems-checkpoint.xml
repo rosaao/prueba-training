@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="spaceship_list_action">
+            <field name="name">Spaceship</field>
+            <field name="res_model">spaceship</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first spaceship
+                </p>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="mission_list_action">
+            <field name="name">Mission</field>
+            <field name="res_model">space.mission</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first Mission
+                </p>
+            </field>
+        </record>
+        
+        <menuitem name="Odoo Space Mission"
+                  id="menu_spaceship"
+                  sequence="2"/>
+        
+        <menuitem id="menu_spaceship_sub" name="Space mission" parent="menu_spaceship" sequence="2"/>
+        
+        <menuitem id="menu_spaceship_spaceships" name="Spaceships" parent="menu_spaceship_sub" sequence="3"
+                  action="spaceship_list_action"/>
+        
+        <menuitem id="menu_spaceship_missions" name="Missions" parent="menu_spaceship_sub" sequence="4"
+                  action="mission_list_action"/>
+    </data>
+</odoo>
